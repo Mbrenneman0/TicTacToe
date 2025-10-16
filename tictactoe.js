@@ -5,9 +5,9 @@ let grid = [];
 for(let row = 0; row < 3; row++)
 {
     let newRow = []
-    for(let col = 0; col < 3; row++)
+    for(let col = 0; col < 3; col++)
     {
-        newRow.push(document.getElementsByClassName("cell")[row*col])
+        newRow.push(document.getElementsByClassName("cell")[row*3 + col])
     }
     grid.push(newRow);
 }
@@ -33,7 +33,7 @@ function nextTurn()
     }
     else
     {
-        turn === "X";
+        turn = "X";
     }
 }
 
