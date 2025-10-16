@@ -31,7 +31,7 @@ function nextTurn()
     }
     else
     {
-        turn === "X";
+        turn = "X";
     }
 }
 
